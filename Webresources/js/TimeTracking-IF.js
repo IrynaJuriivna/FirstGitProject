@@ -63,15 +63,6 @@ Enavate.TimeTracking.Forms.TimeTrackingRecordForms = {
         formContext.data.entity.addOnSave(this.formOnSaveHandler.bind(this));
     },
 
-    onReportHoursSaveHandler: function (executionContext) {
-        //   if(executionContext.getEventArgs().getIsSaveSuccess())
-        let formContext = executionContext.getFormContext();
-        let dayIdRef = formContext.getAttribute("st08_day").getValue();
-        let dayId = (dayIdRef) ? dayIdRef[0].id : null;
-        Enavate.TimeTracking.Utils.calcRollupField(formContext, "st08_timetrackingdaies", dayId, "st08_totalhours");
-        //    }
-    },
-
     onReportHoursChangeHandler: function (executionContext) {
         var formContext = executionContext.getFormContext();
         let reportedhours = formContext.getAttribute("st08_reportedhours").getValue();
