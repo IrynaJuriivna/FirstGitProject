@@ -9,8 +9,7 @@ Enavate.TimeTracking.Utils = {
         let currentUser = [];
         currentUser[0] = {};
         currentUser[0].entityType = "systemuser";
-        currentUser[0].id = globalContext.userSettings.userId;
-        currentUser[0].name = globalContext.userSettings.userName;
+
 
         formContext.getAttribute(fieldName).setValue(currentUser);
     },
