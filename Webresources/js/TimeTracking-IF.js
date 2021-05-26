@@ -9,7 +9,7 @@ Enavate.TimeTracking.Utils = {
 
         let currentUser = [];
         currentUser[0] = {};
-        currentUser[0].entityType = "contact";
+        currentUser[0].entityType = "client";
         currentUser[0].name = "Ira";
 
 
@@ -32,8 +32,7 @@ Enavate.TimeTracking.Utils = {
 
     //+
     formatDate: function (dateValue) {
-        const offset = dateValue.getTimezoneOffset()
-        dateValue = new Date(dateValue.getTime() - (offset * 60 * 1000))
+        dateValue = new Date(dateValue.getTime()
         let result = dateValue.toISOString().slice(0, 10);
         return result;
     },
