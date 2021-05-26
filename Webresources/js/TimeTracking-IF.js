@@ -7,7 +7,9 @@ Enavate.TimeTracking.Utils = {
     setLookupFieldToCurrentUser: function (formContext, fieldName) {
         var globalContext = Xrm.Utility.getGlobalContext();
 
-        currentUser[0].entityType = "systemuser";
+        let currentUser = [];
+        currentUser[0] = {};
+        currentUser[0].entityType = "account";
         currentUser[0].name = "name";
 
 
