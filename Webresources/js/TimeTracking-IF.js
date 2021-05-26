@@ -9,7 +9,7 @@ Enavate.TimeTracking.Utils = {
 
         let currentUser = [];
         currentUser[0] = {};
-        currentUser[0].entityType = "client";
+        currentUser[0].entityType = "contact";
         currentUser[0].name = "Ira";
 
 
